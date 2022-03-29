@@ -5,9 +5,9 @@ import { ThemeProvider } from "@mui/material";
 import appTheme from "./AppTheme";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Projects from "./components/Projects/Projects";
+import Resume from "./components/Resume/Resume";
 import Gallery from "./components/Gallery/Gallery";
-import Bio from "./components/Bio/Bio";
+import Biodata from "./components/Biodata/Biodata";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/home" component={Home}></Route>
-            <Route exact path="/projects" component={Projects}></Route>
+            <Route exact path="/resume" component={Resume}></Route>
             <Route exact path="/gallery" component={Gallery}></Route>
-            <Route exact path="/bio" component={Bio}></Route>
+            <Route exact path="/biodata" component={Biodata}></Route>
             <Redirect to="/" />
           </Switch>
           <Footer />

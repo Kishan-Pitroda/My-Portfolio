@@ -1,14 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import Avatar from "@mui/material/Avatar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import logo from "../../assets/images/white-logo.png";
 import { useHistory } from "react-router-dom";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
@@ -43,8 +35,7 @@ const Footer: React.FC = () => {
                 sx={{
                   color: "#61dafb",
                   padding: "15px 0px 5px",
-                  textDecoration: "underline",
-                  fontFamily: "cursive",
+                  fontFamily: "'Montserrat', sans-serif",
                 }}
               >
                 Quick Links
@@ -57,27 +48,27 @@ const Footer: React.FC = () => {
                 onClick={() => redirectToPage("gallery")}
                 className="link"
               >
-                GALLERY
+                Gallery
               </Link>
             </Grid>
             <Grid item xs={12} className="row-item">
               <Link
                 component="a"
                 variant="subtitle2"
-                onClick={() => redirectToPage("projects")}
+                onClick={() => redirectToPage("resume")}
                 className="link"
               >
-                MY CV
+                Resume
               </Link>
             </Grid>
             <Grid item xs={12} className="row-item">
               <Link
                 component="a"
                 variant="subtitle2"
-                onClick={() => redirectToPage("bio")}
+                onClick={() => redirectToPage("biodata")}
                 className="link"
               >
-                BIO
+                Biodata
               </Link>
             </Grid>
           </Grid>
@@ -91,8 +82,7 @@ const Footer: React.FC = () => {
                 sx={{
                   color: "#61dafb",
                   padding: "15px 0px 5px",
-                  textDecoration: "underline",
-                  fontFamily: "cursive",
+                  fontFamily: "'Montserrat', sans-serif",
                 }}
               >
                 Contact
@@ -133,8 +123,7 @@ const Footer: React.FC = () => {
                 sx={{
                   color: "#61dafb",
                   padding: "15px 0px 5px",
-                  textDecoration: "underline",
-                  fontFamily: "cursive",
+                  fontFamily: "'Montserrat', sans-serif",
                 }}
               >
                 Follow me on

@@ -1,3 +1,8 @@
 .navbar {
   border-bottom: 5px solid #61dafb;
 }
+.MuiDrawer-paper {
+  background: #61dafb;
+  background: linear-gradient(30deg, #bae0eb 50%, #61dafb 50%);
+  background: -webkit-linear-gradient(30deg, #bae0eb 50%, #61dafb 50%);
+}

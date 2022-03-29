@@ -1,7 +1,11 @@
 .card-container {
   background: #61dafb;
-  background: -webkit-linear-gradient(to top, #bae0eb, #61dafb);
-  background: linear-gradient(to top, #bae0eb, #61dafb);
+  background: linear-gradient(30deg, #bae0eb 50%, #61dafb 50%);
+  background: -webkit-linear-gradient(
+    30deg,
+    #bae0eb 50%,
+    #61dafb 50%
+  ) !important;
   padding: 48px 24px 24px;
 }
 .card-grid {
@@ -14,6 +18,7 @@
   background: #232526 !important;
   background: -webkit-linear-gradient(to top, #232526, #000) !important;
   background: linear-gradient(to top, #232526, #000) !important;
+  border-radius: 10% !important;
 }
 .card:hover {
   background: #000 !important;
@@ -23,8 +28,8 @@
   text-align: left;
   color: white;
   background: #000;
-  background: -webkit-linear-gradient(to top, #232526, #000);
-  background: linear-gradient(to top, #232526, #000);
+  background: -webkit-linear-gradient(140deg, #000 50%, #232526 50%);
+  background: linear-gradient(140deg, #000 50%, #232526 50%);
 }
 .green-text {
   color: #61dafb;

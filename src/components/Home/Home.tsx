@@ -38,7 +38,7 @@ const Home: React.FC = () => {
         <Typography
           variant="h3"
           component="h3"
-          sx={{ my: 2, fontFamily: "cursive" }}
+          sx={{ my: 2, fontFamily: "'Montserrat', sans-serif" }}
         >
           Kishan Pitroda,
         </Typography>
@@ -50,7 +50,8 @@ const Home: React.FC = () => {
       <Grid container className="card-container">
         <Grid item xs={12} sm={4} className="card-grid">
           <Card
-            sx={{ width: "180px", height: "180px" }}
+            variant="outlined"
+            sx={{ width: "230px", height: "190px" }}
             className="card"
             onClick={() => redirectToPage("gallery")}
           >
@@ -59,45 +60,80 @@ const Home: React.FC = () => {
               <Typography
                 variant="h6"
                 component="h6"
-                sx={{ fontFamily: "cursive" }}
+                sx={{ fontFamily: "'Montserrat', sans-serif" }}
               >
                 Gallery
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                component="p"
+                color="secondary"
+                sx={{
+                  fontFamily: "'Montserrat', sans-serif",
+                  fontWeight: 400,
+                  p: 1,
+                }}
+              >
+                You can watch some of my pictures here
               </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} sm={4} className="card-grid">
           <Card
-            sx={{ width: "180px", height: "180px" }}
+            variant="outlined"
+            sx={{ width: "230px", height: "190px" }}
             className="card"
-            onClick={() => redirectToPage("projects")}
+            onClick={() => redirectToPage("resume")}
           >
             <CardContent sx={{ color: "white" }}>
               <WorkIcon color="secondary" fontSize="large" />
               <Typography
                 variant="h6"
                 component="h6"
-                sx={{ fontFamily: "cursive" }}
+                sx={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                Projects
+                Resume
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                component="p"
+                color="secondary"
+                sx={{
+                  fontFamily: "'Montserrat', sans-serif",
+                  fontWeight: 400,
+                  p: 1,
+                }}
+              >
+                It covers my IT professional career details
               </Typography>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={12} sm={4} className="card-grid">
           <Card
-            sx={{ width: "180px", height: "180px" }}
+            variant="outlined"
+            sx={{ width: "230px", height: "190px" }}
             className="card"
-            onClick={() => redirectToPage("bio")}
+            onClick={() => redirectToPage("biodata")}
           >
             <CardContent sx={{ color: "white" }}>
               <ContactPageIcon color="secondary" fontSize="large" />
               <Typography
                 variant="h6"
                 component="h6"
-                sx={{ fontFamily: "cursive" }}
+                sx={{ fontFamily: "'Montserrat', sans-serif", p: 1 }}
               >
-                Bio-Data
+                Biodata
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                component="p"
+                color="secondary"
+                sx={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 400 }}
+              >
+                You can see my personal, family, education and some other
+                details.
               </Typography>
             </CardContent>
           </Card>

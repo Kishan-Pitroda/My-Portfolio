@@ -1,0 +1,18 @@
+.about {
+  display: flex;
+  flex-direction: column !important;
+  background: #61dafb;
+  text-align: left;
+  background: linear-gradient(30deg, #bae0eb 50%, #61dafb 50%);
+  background: -webkit-linear-gradient(
+    30deg,
+    #bae0eb 50%,
+    #61dafb 50%
+  ) !important;
+  padding: 24px;
+}
+.main-view {
+  background: #000;
+  background: -webkit-linear-gradient(140deg, #000 50%, #232526 40%);
+  background: linear-gradient(140deg, #000 50%, #232526 50%);
+}

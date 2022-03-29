@@ -1,7 +1,7 @@
 import { Avatar, Grid, Typography } from "@mui/material";
 import React from "react";
-import "./Bio.css";
-import avatar from "../../assets/images/avatar1.jpg";
+import "./Biodata.css";
+import avatar from "../../assets/images/bio-pic.jpg";
 import { Box } from "@mui/system";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import EmailIcon from "@mui/icons-material/Email";
@@ -9,7 +9,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import SchoolIcon from "@mui/icons-material/School";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 
-const Bio: React.FC = () => {
+const Biodata: React.FC = () => {
   return (
     <Grid container>
       <Grid item xs={12} md={3} className="about">
@@ -27,9 +27,9 @@ const Bio: React.FC = () => {
             color: "#000",
             mt: 2,
             mb: 1,
-            fontFamily: "cursive",
+            fontFamily: "'Montserrat', sans-serif",
             textAlign: "center",
-            fontWeight: "bold",
+            fontWeight: 600,
           }}
         >
           CONTACT
@@ -101,9 +101,9 @@ const Bio: React.FC = () => {
             color: "#000",
             mt: 2,
             mb: 1,
-            fontFamily: "cursive",
+            fontFamily: "'Montserrat', sans-serif",
             textAlign: "center",
-            fontWeight: "bold",
+            fontWeight: 600,
           }}
         >
           EDUCATION
@@ -156,9 +156,9 @@ const Bio: React.FC = () => {
             color: "#61dafb",
             mt: 2,
             mb: 1,
-            fontFamily: "cursive",
+            fontFamily: "'Montserrat', sans-serif",
             textAlign: "center",
-            fontWeight: "bold",
+            fontWeight: 600,
           }}
         >
           Personal Details
@@ -400,9 +400,9 @@ const Bio: React.FC = () => {
             color: "#61dafb",
             mt: 2,
             mb: 1,
-            fontFamily: "cursive",
+            fontFamily: "'Montserrat', sans-serif",
             textAlign: "center",
-            fontWeight: "bold",
+            fontWeight: 600,
           }}
         >
           Family Details
@@ -526,4 +526,4 @@ const Bio: React.FC = () => {
     </Grid>
   );
 };
-export default Bio;
+export default Biodata;

@@ -1,0 +1,53 @@
+.top-view-resume {
+  color: #282c34;
+  background: #282c34;
+  background: linear-gradient(90deg, #000 50%, #282c34 50%);
+  background: -webkit-linear-gradient(90deg, #000 50%, #282c34 50%);
+}
+.card-resume {
+  background: #61dafb !important;
+  background: linear-gradient(140deg, #bae0eb 50%, #61dafb 50%) !important;
+  background: -webkit-linear-gradient(
+    140deg,
+    #bae0eb 50%,
+    #61dafb 50%
+  ) !important;
+}
+.card-content-resume {
+  padding: 24px !important;
+}
+.social-media-icon-resume {
+  padding: 5px;
+  cursor: pointer;
+}
+.instagram {
+  padding: 5px 5px 5px 0px;
+  cursor: pointer;
+}
+.intermediate-view-resume {
+  background: #000;
+}
+.card-resume-intermediate {
+  background-color: #bae0eb !important;
+}
+.card-resume-education {
+  background: #232526 !important;
+  background: -webkit-linear-gradient(to top, #232526, #000) !important;
+  background: linear-gradient(to top, #232526, #000) !important;
+}
+.tech-icon-container > span > i {
+  font-size: 56px;
+}
+.tech-icon-container > span > i:hover {
+  color: #bae0eb;
+  cursor: pointer;
+}
+.tech-icon-container > span {
+  padding: 10px;
+}
+.project-link {
+  color: white !important;
+}
+.project-link:hover {
+  color: #61dafb !important;
+}
