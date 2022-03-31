@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { ImageList, ImageListItem, Dialog } from "@mui/material";
-import "./Gallery.css";
+import React from "react";
+import { ImageList, ImageListItem } from "@mui/material";
 export const photos = [
   {
     src: "https://github.com/Kishan-Pitroda/My-Portfolio/blob/pwa-integration/src/assets/gallery/personal/img%20(1).jpeg?raw=true",
@@ -38,14 +37,12 @@ export const photos = [
   {
     src: "https://github.com/Kishan-Pitroda/My-Portfolio/blob/pwa-integration/src/assets/gallery/personal/img%20(7).jpg?raw=true",
   },
-
   {
     src: "https://github.com/Kishan-Pitroda/My-Portfolio/blob/pwa-integration/src/assets/gallery/personal/img%20(9).jpg?raw=true",
   },
   {
     src: "https://github.com/Kishan-Pitroda/My-Portfolio/blob/pwa-integration/src/assets/gallery/personal/img%20(10).jpg?raw=true",
   },
-
   {
     src: "https://github.com/Kishan-Pitroda/My-Portfolio/blob/pwa-integration/src/assets/gallery/personal/img%20(12).jpg?raw=true",
   },
@@ -55,7 +52,6 @@ export const photos = [
   {
     src: "https://github.com/Kishan-Pitroda/My-Portfolio/blob/pwa-integration/src/assets/gallery/personal/img%20(14).jpg?raw=true",
   },
-
   {
     src: "https://github.com/Kishan-Pitroda/My-Portfolio/blob/pwa-integration/src/assets/gallery/personal/img%20(16).jpg?raw=true",
   },
@@ -105,8 +101,6 @@ export const photos = [
 ];
 
 const Gallery: React.FC = () => {
-  const [open, setOpen] = useState(false);
-  const [imgSrc, setImgSrc] = useState("");
   const srcset = (image: string, size: number) => {
     return {
       src: `${image}?w=${size}&h=${size}&fit=crop&auto=format`,
@@ -114,35 +108,14 @@ const Gallery: React.FC = () => {
     };
   };
 
-  const handleDialogOpen = (src: string) => {
-    setOpen(true);
-    setImgSrc(src);
-  };
-
   return (
-    <div>
-      <ImageList sx={{ rows: 550, cols: 450 }} variant="quilted" cols={3}>
-        {photos.map((item) => (
-          <ImageListItem key={item.src} cols={1} rows={1}>
-            <img
-              {...srcset(item.src, 121)}
-              alt={""}
-              loading="lazy"
-              onClick={() => handleDialogOpen(item.src)}
-              className="img"
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-      <Dialog
-        fullWidth
-        maxWidth="md"
-        open={open}
-        onClose={() => setOpen(false)}
-      >
-        <img src={imgSrc} alt={""} loading="lazy" className="dialog-img" />
-      </Dialog>
-    </div>
+    <ImageList sx={{ rows: 550, cols: 450, m: 0 }} variant="quilted" cols={3}>
+      {photos.map((item) => (
+        <ImageListItem key={item.src} cols={1} rows={1}>
+          <img {...srcset(item.src, 121)} alt={""} loading="lazy" />
+        </ImageListItem>
+      ))}
+    </ImageList>
   );
 };
 export default Gallery;
