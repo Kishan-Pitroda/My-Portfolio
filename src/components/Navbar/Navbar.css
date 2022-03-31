@@ -6,3 +6,6 @@
   background: linear-gradient(30deg, #bae0eb 50%, #61dafb 50%);
   background: -webkit-linear-gradient(30deg, #bae0eb 50%, #61dafb 50%);
 }
+.navbar-link:hover {
+  color: #bae0eb;
+}

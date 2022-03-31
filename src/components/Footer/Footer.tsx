@@ -45,16 +45,6 @@ const Footer: React.FC = () => {
               <Link
                 component="a"
                 variant="subtitle2"
-                onClick={() => redirectToPage("gallery")}
-                className="link"
-              >
-                Gallery
-              </Link>
-            </Grid>
-            <Grid item xs={12} className="row-item">
-              <Link
-                component="a"
-                variant="subtitle2"
                 onClick={() => redirectToPage("resume")}
                 className="link"
               >
@@ -69,6 +59,16 @@ const Footer: React.FC = () => {
                 className="link"
               >
                 Biodata
+              </Link>
+            </Grid>
+            <Grid item xs={12} className="row-item">
+              <Link
+                component="a"
+                variant="subtitle2"
+                onClick={() => redirectToPage("gallery")}
+                className="link"
+              >
+                Gallery
               </Link>
             </Grid>
           </Grid>
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
                   fontFamily: "'Montserrat', sans-serif",
                 }}
               >
-                Follow me on
+                Follow On
               </Typography>
             </Grid>
             <Grid item xs={12}>

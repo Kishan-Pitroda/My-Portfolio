@@ -9,6 +9,7 @@ import Resume from "./components/Resume/Resume";
 import Gallery from "./components/Gallery/Gallery";
 import Biodata from "./components/Biodata/Biodata";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="App">
         <BrowserRouter>
           <Navbar />
+          <ScrollToTop />
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/home" component={Home}></Route>

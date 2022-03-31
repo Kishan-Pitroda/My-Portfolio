@@ -24,9 +24,9 @@ interface IPage {
   name: string;
 }
 const pages: IPage[] = [
-  { path: "gallery", name: "Gallery" },
   { path: "resume", name: "Resume" },
   { path: "biodata", name: "Biodata" },
+  { path: "gallery", name: "Gallery" },
 ];
 const Navbar: React.FC = () => {
   const history = useHistory();
@@ -123,6 +123,7 @@ const Navbar: React.FC = () => {
                 onClick={() => redirectToPage(page.path)}
                 sx={{ my: 2, mx: 1, display: "block" }}
                 color="secondary"
+                className="navbar-link"
               >
                 {page.name}
               </Button>
