@@ -104,7 +104,7 @@ export const photos = [
   },
 ];
 
-const GalleryComponent: React.FC = () => {
+const Gallery: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [imgSrc, setImgSrc] = useState("");
   const srcset = (image: string, size: number) => {
@@ -145,4 +145,4 @@ const GalleryComponent: React.FC = () => {
     </div>
   );
 };
-export default GalleryComponent;
+export default Gallery;
