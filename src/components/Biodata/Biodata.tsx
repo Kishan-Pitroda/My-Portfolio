@@ -297,7 +297,7 @@ const Biodata: React.FC = () => {
               component="p"
               sx={{ color: "white", px: 1 }}
             >
-              50kg
+              52kg
             </Typography>
           </Grid>
         </Grid>

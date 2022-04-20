@@ -336,7 +336,7 @@ const Resume: React.FC = () => {
                             color: "#fff",
                           }}
                         >
-                          Percentage: 76.20%
+                          PR: 95.33%
                         </Typography>
                       </CardContent>
                     </Card>
@@ -389,7 +389,7 @@ const Resume: React.FC = () => {
                             color: "#fff",
                           }}
                         >
-                          Percentage: 86.33%
+                          PR: 98.39%
                         </Typography>
                       </CardContent>
                     </Card>
